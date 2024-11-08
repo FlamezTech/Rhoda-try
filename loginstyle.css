@@ -36,6 +36,7 @@ body {
     justify-content: left;
     text-align: left;
     padding-top: 40px;
+    padding-bottom: 10px;
 }
 
 .form input {
@@ -44,11 +45,30 @@ body {
     border-radius: 15px;
 }
 
+.form a {
+    background: none;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid orange;
+    color: orange;
+    text-decoration: none;
+    width: 100px;
+    align-self: center;
+}
+
+.form .abeg {
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    width: 200px;
+}
+
 @media (max-width: 700px) {
     .form {
         width: 300px;
     }
     body {
         margin: 20px;
+        background-size: 100vh;
     }
 }
