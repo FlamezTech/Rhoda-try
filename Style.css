@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.navbar {
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid orange;
+}
+
+.navlinks li a:hover {
+    color: rgb(194, 183, 183);
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.logo a {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.navlinks {
+    display: flex;
+    gap: 170px;
+}
+
+.navlinks li {
+    list-style: none;
+}
+
+.navlinks li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.navicon a {
+    background-color: orange ;
+    padding: 17px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.navicon a .none {
+    background-color: rgb(216, 187, 133);
+}
+
+.now1 {
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    gap: 100px;
+    color: white;
+    align-items: center;
+}
+
+.nowoo img {
+    height: 500px;
+    width: 500px;
+}
+
+.now {
+    padding: 60px;
+    display: inline;
+}
+
+.now h1 {
+    font-size: 100px;
+}
+
+.now .goat {
+    color: orange;
+}
+
+.something {
+    background-color: antiquewhite;
+}
+
+.something h1 {
+    font-size: 30px;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.something .tom {
+    padding-top: 30px;
+}
+
+.something .titi {
+    color: orange;
+    padding-bottom: 20px;
+}
+
+.image {
+    display: flex;
+    justify-content: space-around;
+}
+
+.first {
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.first img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.first h1 {
+    padding: 10px;
+}
+
+.first p {
+    margin-left: 10px;
+}
+
+.inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.inside a {
+    margin-right: 10px;
+    background: none;
+    border: 1px solid orange;
+    border-radius: 10px;
+    color: orange;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Adjust navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navlinks {
+        display: none; /* Hide navigation links initially */
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+    }
+
+    .navicon {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    /* Show navigation links on clicking hamburger icon */
+    .hamburger-menu {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+        background: none;
+        border: none;
+        margin-left: auto;
+    }
+
+    .navlinks.active {
+        display: flex;
+    }
+
+    /* Adjust content layout */
+    .now1 {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .now h1 {
+        font-size: 50px;
+    }
+
+    .nowoo img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .something {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first {
+        margin: 20px;
+    }
+}
+
+
